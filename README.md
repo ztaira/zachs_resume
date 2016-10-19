@@ -1,5 +1,5 @@
 # zachs_resume
-Hack-a-Week 8: An easy, memorable way to download my resume from the terminal. 
+Hack-a-Week 8: My resume in LaTeX.
 
 ### Usage:
 - From a terminal, run the following command: 
@@ -12,7 +12,7 @@ Hack-a-Week 8: An easy, memorable way to download my resume from the terminal.
 - Once cloned, my resume can be accessed regardless of internet status
 
 ### What it does:
-- Contains a PDF of my resume
+- Contains a PDF of my resume as well as the LaTeX file I used to write it
 
 ### What it doesn't do:
 - Automatically update (In order to update, you must run `git pull`)
@@ -20,7 +20,9 @@ Hack-a-Week 8: An easy, memorable way to download my resume from the terminal.
 ### Included Files:
 ```
 - README.md..................This readme file
-- ZacharyTairaResume.pdf.....A PDF of my resume, last updated on 9/14/2016
+- ZacharyTairaResume.pdf.....A PDF of my resume, last updated on 10/19/2016
+- ZacharyTairaResume.tex.....LaTeX file of my resume
+- tccv.cls...................Tex class file I used and modified. Original work by Nicole Fontana
 - diagrams/..................A directory containing relevant diagrams and images
 ```
 
