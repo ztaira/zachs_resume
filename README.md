@@ -27,5 +27,4 @@ Hack-a-Week 8: My resume in LaTeX.
 ```
 
 ### Example Output:
-![alt text][outputimage]
-[outputimage]: https://github.com/ztaira14/zachs_resume/blob/master/diagrams/gitclone.png "Git Clone"
+![alt text](https://github.com/ztaira14/zachs_resume/blob/master/diagrams/gitclone.png "Git Clone")
