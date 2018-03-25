@@ -1,129 +1,183 @@
-\documentclass{tccv}
-\usepackage[english]{babel}
+%-------------------------
+% Zach's Resume
+%
+% Credit where credit is due:
+% This was modified from a template obtained from ShareLaTeX
+% Template Author: Sourabh Bajaj
+% URL: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tabu}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\educationSubheading}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\part{Zachary Taira}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Zachary Taira} & Email : zach.taira@gmail.com\\
+  github.com/ztaira14 & Mobile : +1-808-238-9713 \\
+\end{tabular*}
 
-\section{Work experience}
-
-\begin{eventlist}
-
-\item{Jan -- July 2016}
-     {Resilient, an IBM Company}
-     {Sales Engineer}
-
-Built custom modules for current and prospective Resilient customers using
-Python. Team lead on building out Sales Engineering demo environment,
-ensuring its reliability, and demoing new functionality for Account Executives.
-Created Resilient API Examples GitLab repository to store and showcase
-said Python integrations. Ran meetings to keep the Sales Engineering
-team up to date.
-
-\item{Jan 2015 -- Jan 2016}
-     {Northeastern SMILE Lab}
-     {Undergraduate Research Assistant}
-
-Led a team of 9 students in creating a familial image database for image
-reconition by organizing data collection deadlines and scheduling meetings.
-Personally contributed over 1500 out of 6000 total images. Parsed through and
-compiled statistics for the database using Python. 
-
-\item{May -- Sept 2015}
-     {Northeastern University}
-     {Orientation Leader}
-
-Worked efficiently alongside a team of 35 peers and graduate students to
-foster an atmosphere of inclusivity and support for new students and their
-families over 3-day orientation cycles. Led numerous icebreakers and team
-bonding activities for 5 unique 20-person student groups and 2800 university
-guests. Volunteered cheerfully to help staff undermanned activites.
-\end{eventlist}
-
-\section{Relevant Coursework}
-\begin{factlist}
-\item{2016}
-    {Fundamentals of Linear Systems\\
-    Fundamentals of Electronics\\
-    Fundamentals of Networks\\
-    Advanced Writing}
-\item{2015}
-    {Linear Algebra/Differential Equations\\
-    Circuits and Signals\\
-    Probability and Statistics\\
-    Embedded Design\\
-    Engineering Mechanics and Design\\
-    Engineering Problem Solving and Computation}
-\item{2014}
-    {Calculus 3\\
-    Engineering Design}
-\end{factlist}
-
-\personal
-    {zach.taira@gmail.com}
-    {(808)-238-9713}
-    {github.com/ztaira14}
-    {www.linkedin.com/in/zacharytaira}
-
-\section{Projects (On GitHub)}
-
-\begin{yearlist}
-
-\item{Oct 2016}
-    {hub\_where (Python)}
-    {Hack-A-Week 11 and 12: Python scripts to gather and visualize data
-from Hubway's bike-sharing stations}
-
-\item{Sept 2016}
-    {evil\_maid\_suite (Python)}
-    {Hack-A-Week 10: Data Visualization on the time I keylogged myself}
-
-\item{Aug 2016}
-    {uku\_tabs (C++)}
-    {Hack-A-Week 6 and 7: A terminal-based guitar/ukulele tab management tool}
-
-\item{July 2016}
-    {flappy\_term (C++)}
-    {Hack-A-Week 4: ASCII flappy bird clone using ncurses}
-
-\item{July 2016}
-    {python\_flow (C++)}
-    {Hack-A-Week 2: A python flow visualizer in C++}
-
-\item{July 2016}
-    {aes\_python (Python)}
-    {Hack-A-Week 1: An attempt at implementing the Advanced Encryption
-    Standard in Python}
-
-\end{yearlist}
-
+%-----------EDUCATION-----------------
 \section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Northeastern University}{Boston, MA}
+      {BS/MS in Electrical and Computer Engineering}{May 2019}
+      { - Honors: Eta Kappa Nu, Dean's List}{GPA: 3.698}
+  \resumeSubHeadingListEnd
 
-\begin{yearlist}
+%-----------RELEVANT COURSEWORK-----------------
+\section{Relevant Coursework}
+\begin{tabu} { X[l] X[l] }
+  Machine Learning and Pattern Recognition & Computational Methods for Data Analytics \\
+  Intro to Software Security & Fundamentals of Engineering Algorithms \\
+  Fundamentals of Computer Engineering & Fundamentals of Computer Networks \\
+\end{tabu}
 
-\item[B.S. in Electrical Engineering \newline GPA: 3.65, Dean's List]{May 2019}
-     {Northeastern University}
-     {Boston, MA}
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
 
-\item{May 2014}
-     {Punahou School}
-     {Honolulu, HI}
+    \resumeSubheading
+      {Software Engineer}{Boston, MA}
+      {IBM Resilient}{Jan - July 2017}
+      \resumeItemListStart
+        \resumeItem{Python/Pytest/Bash}
+          {Wrote and tested a modular, extensible testing framework to verify Resilient's CLI}
+        \resumeItem{HTML/CSS/JS (React)}
+          {Storyboarded, wrote, and tested a prototype Chrome extension using React}
+        \resumeItem{Presales}
+          {Went on-site with Account Executives to debug issues and remove roadblocks for potential customers}
+      \resumeItemListEnd
 
-\end{yearlist}
+    \resumeSubheading
+      {Sales Engineer}{Boston, MA}
+      {Resilient Systems}{Jan - July 2016}
+      \resumeItemListStart
+        \resumeItem{Python}
+          {Built custom Resilient extensions for current and prospective customers under tight time and quality constraints | Worked with Sales, Sales Engineering, and Professional Services to set and fulfill POC criteria}
+        \resumeItem{HTML/CSS/JS}
+          {Set up a webpage with Resilient integration as part of a POC}
+        \resumeItem{Presales}
+          {Ran technical demonstrations for numerous Fortune 500 and countless smaller companies in order to consistently accelerate the B2B sales cycle}
+      \resumeItemListEnd
 
-\section{Software skills}
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Boston, MA}
+      {SMILE Labs, Northeastern University}{Jan 2015 - Jan 2016}
+      \resumeItemListStart
+        \resumeItem{Leadership}
+          {Led a team of 9 students in creating a familial image database for facial recognition by organizing deadlines, scheduling meetings, and personally contributing over 1500 images | (http://smile-fiw.weebly.com/)}
+        \resumeItem{Python}
+          {Parsed through and compiled statistics for the database using Python}
+      \resumeItemListEnd
 
-\begin{factlist}
+    \resumeSubheading
+      {Orientation Leader}{Boston, MA}
+      {Northeastern University}{May - Sept 2015}
+      \resumeItemListStart
+        \resumeItem{Team Building}
+          {Led icebreakers and team bonding activities for 20-person student orientation groups and thousands of university guests in order to create an atmosphere of inclusivity and support}
+        \resumeItem{Teamwork}
+          {Worked efficiently alongside a team of 35 peers and graduate students to ensure all aspects of the 3-day orientation cycles ran smoothly}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\item{Languages:}
-     {Python, C++, bash, MATLAB, HTML, CSS, Javascript, SQLite, Vimscript, LaTeX}
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{ztaira14.github.io}
+      {A website created with React to provide convenient access to all my side projects}
+    \resumeSubItem{bsmsViz}
+      {A visualization of Northeastern's BS/MS program interdependencies using D3}
+    \resumeSubItem{flappy\_term}
+      {An ASCII flappy bird game created with ncurses and C++}
+  \resumeSubHeadingListEnd
 
-\item{Operating Systems:}
-     {Linux, Mac OS X}
+%--------PROGRAMMING SKILLS------------
+\section{Software Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Python, HTML/CSS/JS, C++, SQL, bash, MATLAB, LaTeX, Vimscript}
+    \resumeSubItem{Operating Systems}
+      {macOS, Linux}
+  \resumeSubHeadingListEnd
 
-\item{Technologies:}
-     {git, Resilient, Solidworks, PSpice}
+%--------RECREATIONAL ACTIVITIES------------
+\section{Recreational Activities}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Interpersonal}
+      {Soccer, rock climbing, sailing, martial arts}
+    \resumeSubItem{Solo}
+      {Reading, windsurfing}
+  \resumeSubHeadingListEnd
 
-\end{factlist}
-
+%-------------------------------------------
 \end{document}
