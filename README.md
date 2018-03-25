@@ -8,7 +8,6 @@ Hack-a-Week 8: My resume in LaTeX.
 
 ### Features:
 - Easy to use
-- Familiar to developers
 - Once cloned, my resume can be accessed regardless of internet status
 
 ### What it does:
@@ -22,8 +21,8 @@ Hack-a-Week 8: My resume in LaTeX.
 - README.md..................This readme file
 - ZacharyTairaResume.pdf.....A PDF of my resume, last updated on 10/19/2016
 - ZacharyTairaResume.tex.....LaTeX file of my resume
-- tccv.cls...................Tex class file I used and modified. Original work by Nicole Fontana
 - diagrams/..................A directory containing relevant diagrams and images
+- LICENSE.txt................The MIT license
 ```
 
 ### Example Output:
