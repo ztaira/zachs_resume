@@ -42,31 +42,36 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item[]
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{#3} & \textit{ #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\educationSubheading}[6]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item[]
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small#5} & \textit{\small #6} \\
+      \textit{#3} & \textit{ #4} \\
+      \textit{#5} & \textit{ #6} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{
+  \item[]{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+  \vspace{-4pt}
+}
 
-\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemii}{$\bullet$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -93,14 +98,6 @@
       { - Honors: Eta Kappa Nu, Dean's List}{GPA: 3.698}
   \resumeSubHeadingListEnd
 
-%-----------RELEVANT COURSEWORK-----------------
-\section{Relevant Coursework}
-\begin{tabu} { X[l] X[l] }
-  Machine Learning and Pattern Recognition & Computational Methods for Data Analytics \\
-  Intro to Software Security & Fundamentals of Engineering Algorithms \\
-  Fundamentals of Computer Engineering & Fundamentals of Computer Networks \\
-\end{tabu}
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -110,11 +107,11 @@
       {IBM Resilient}{Jan - July 2017}
       \resumeItemListStart
         \resumeItem{Python/Pytest/Bash}
-          {Wrote and tested a modular, extensible testing framework to verify Resilient's CLI}
+          {Wrote and tested a modular, extensible framework to verify Resilient's CLI}
         \resumeItem{HTML/CSS/JS (React)}
           {Storyboarded, wrote, and tested a prototype Chrome extension using React}
         \resumeItem{Presales}
-          {Went on-site with Account Executives to debug issues and remove roadblocks for potential customers}
+          {Went on-site with Account Executives to debug issues for potential customers}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -122,11 +119,11 @@
       {Resilient Systems}{Jan - July 2016}
       \resumeItemListStart
         \resumeItem{Python}
-          {Built custom Resilient extensions for current and prospective customers under tight time and quality constraints | Worked with Sales, Sales Engineering, and Professional Services to set and fulfill POC criteria}
+          {Built custom Resilient extensions for current and prospective customers under tight time and quality constraints}
         \resumeItem{HTML/CSS/JS}
           {Set up a webpage with Resilient integration as part of a POC}
         \resumeItem{Presales}
-          {Ran technical demonstrations for numerous Fortune 500 and countless smaller companies in order to consistently accelerate the B2B sales cycle}
+          {Ran technical demonstrations for numerous Fortune 500 and countless smaller companies in order to accelerate the B2B sales cycle}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -134,9 +131,9 @@
       {SMILE Labs, Northeastern University}{Jan 2015 - Jan 2016}
       \resumeItemListStart
         \resumeItem{Leadership}
-          {Led a team of 9 students in creating a familial image database for facial recognition by organizing deadlines, scheduling meetings, and personally contributing over 1500 images | (http://smile-fiw.weebly.com/)}
+          {Led a team of 9 students in creating a familial image dataset for facial recognition by organizing deadlines and scheduling meetings (http://smile-fiw.weebly.com/)}
         \resumeItem{Python}
-          {Parsed through and compiled statistics for the database using Python}
+          {Composed Python scripts to compile statistics for the dataset}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -146,7 +143,7 @@
         \resumeItem{Team Building}
           {Led icebreakers and team bonding activities for 20-person student orientation groups and thousands of university guests in order to create an atmosphere of inclusivity and support}
         \resumeItem{Teamwork}
-          {Worked efficiently alongside a team of 35 peers and graduate students to ensure all aspects of the 3-day orientation cycles ran smoothly}
+          {Worked efficiently alongside a team of 35 peers and graduate students to ensure all aspects of orientation ran smoothly}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -154,11 +151,9 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{ztaira14.github.io}
-      {A website created with React to provide convenient access to all my side projects}
+      {A website built with React to provide convenient access to side projects}
     \resumeSubItem{bsmsViz}
       {A visualization of Northeastern's BS/MS program interdependencies using D3}
-    \resumeSubItem{flappy\_term}
-      {An ASCII flappy bird game created with ncurses and C++}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
@@ -170,11 +165,19 @@
       {macOS, Linux}
   \resumeSubHeadingListEnd
 
+%-----------RELEVANT COURSEWORK-----------------
+\section{Relevant Coursework}
+\begin{tabu} { X[l] X[l] }
+    \hspace{8pt} Machine Learning and Pattern Recognition & Data Mining Techniques\\
+    \hspace{8pt} Fundamentals of Computer Networks & Software Engineering \\
+    \hspace{8pt} Fundamentals of Engineering Algorithms & Software Security \\
+\end{tabu}
+
 %--------RECREATIONAL ACTIVITIES------------
 \section{Recreational Activities}
   \resumeSubHeadingListStart
     \resumeSubItem{Interpersonal}
-      {Soccer, rock climbing, sailing, martial arts}
+      {Soccer, rock climbing, sailing, martial arts, cooking}
     \resumeSubItem{Solo}
       {Reading, windsurfing}
   \resumeSubHeadingListEnd
