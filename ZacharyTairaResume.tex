@@ -55,12 +55,13 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\educationSubheading}[6]{
+\newcommand{\educationSubheading}[7]{
   \vspace{-1pt}\item[]
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{ #4} \\
       \textit{#5} & \textit{ #6} \\
+      \textit{#7}
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -88,15 +89,6 @@
   \textbf{\Large Zachary Taira} & Email : zach.taira@gmail.com\\
   github.com/ztaira14 & Mobile : +1-808-238-9713 \\
 \end{tabular*}
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \educationSubheading
-      {Northeastern University}{Boston, MA}
-      {BS/MS in Electrical and Computer Engineering}{May 2019}
-      {Honors: Eta Kappa Nu, Dean's List}{GPA: 3.735}
-  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -162,16 +154,27 @@
     \resumeSubItem{Languages}
       {Python, HTML/CSS/JS, MATLAB, Go, C++, bash, LaTeX}
     \resumeSubItem{Technologies}
-      {Django, DRF, React, Vue}
+      {Django, DRF, Jupyter, React, Vue}
   \resumeSubHeadingListEnd
 
-%-----------RELEVANT COURSEWORK-----------------
-\section{Relevant Coursework}
-\begin{tabu} { X[l] X[l] }
-    \hspace{8pt} Machine Learning and Pattern Recognition & Data Mining Techniques\\
-    \hspace{8pt} Fundamentals of Computer Networks & Software Engineering \\
-    \hspace{8pt} Fundamentals of Engineering Algorithms & Software Security \\
-\end{tabu}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Northeastern University}{Boston, MA}
+      {BS/MS in Electrical and Computer Engineering}{May 2019}
+      {Honors: Eta Kappa Nu, Dean's List}{GPA: 3.735}
+      {Relevant Coursework:}
+
+    %-----------RELEVANT COURSEWORK-----------------
+    % \hspace*{0.5cm}
+    \begin{tabu} { X[3, l] X[2, l] X[2, l] }
+      \hspace{16pt} Machine Learning and Pattern Recog. & Data Mining Techniques & Computer Vision \\
+      \hspace{16pt} Fund. of Computer Networks & Adv. in Deep Learning & Software Security \\
+      \hspace{16pt} Fund. of Engineering Algorithms & Probability and Statistics & Software Engineering \\
+    \end{tabu}
+
+\resumeSubHeadingListEnd
 
 %--------RECREATIONAL ACTIVITIES------------
 \section{Recreational Activities}
