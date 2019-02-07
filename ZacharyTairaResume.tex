@@ -43,7 +43,17 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    % \textbf{#1}{: #2 \vspace{-2pt}}
+    #2 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeItemRed}[2]{
+  \item{
+    % \textbf{#1}{: #2 \vspace{-2pt}}
+    \color{red}
+    #2 \vspace{-2pt}
+    \color{black}
   }
 }
 
@@ -99,23 +109,21 @@
       {IBM Resilient}{Jan - July 2017}
       \resumeItemListStart
         \resumeItem{Python/Pytest/Bash}
-          {Wrote and tested a modular, extensible framework to verify Resilient's CLI}
-        \resumeItem{HTML/CSS/JS (React)}
-          {Storyboarded, wrote, and tested a prototype Chrome extension using React}
-        \resumeItem{Presales}
-          {Went on-site with Account Executives to debug issues for potential customers}
+          {Wrote and tested a test harness to verify IBM Resilient's command-line output}
+        \resumeItem{HTML/CSS/JS, React}
+          {Storyboarded, wrote, and tested a prototype Chrome extension for highlighting Indicators of Compromise in IBM Resilient Incident Response Platform}
+        \resumeItem{JS}
+          {Helped rewrite front-end code from CoffeeScript to TypeScript while ensuring no regression bugs were introduced}
       \resumeItemListEnd
 
     \resumeSubheading
       {Sales Engineer Co-op}{Boston, MA}
       {Resilient Systems}{Jan - July 2016}
       \resumeItemListStart
-        \resumeItem{Python}
-          {Built custom Resilient extensions for current and prospective customers under tight time and quality constraints}
-        \resumeItem{HTML/CSS/JS}
-          {Set up a webpage with Resilient integration as part of a POC}
         \resumeItem{Presales}
-          {Ran technical demonstrations for numerous Fortune 500 and countless smaller companies in order to accelerate the B2B sales cycle}
+          {Ran technical presentations for numerous Fortune 500 and countless smaller companies in order to accelerate the B2B sales cycle}
+        \resumeItem{Python}
+          {Built custom scripts to demonstrate functionality of Resilient Systems Incident Response Platform for current and prospective customers}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -123,9 +131,11 @@
       {SMILE Labs, Northeastern University}{Jan 2015 - Jan 2016}
       \resumeItemListStart
         \resumeItem{Leadership}
-          {Led a team of 9 students in creating a familial image dataset for facial recognition by organizing deadlines and scheduling meetings (http://smile-fiw.weebly.com/)}
+          {Helped build the largest public kinship image dataset to date (Families in the Wild), consisting of over 13,000 family photos and 1,000 unique family trees}
+        \resumeItem{Leadership}
+          {Delegated tasks to fellow students to ensure image collection standards and deadlines were met}
         \resumeItem{Python}
-          {Composed Python scripts to compile statistics for the dataset}
+          {Composed Python scripts to compile dataset statistics in order to provide up-to-date progress reports}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -133,9 +143,9 @@
       {Northeastern University}{May - Sept 2015}
       \resumeItemListStart
         \resumeItem{Team Building}
-          {Led icebreakers and team bonding activities for 20-person student orientation groups and thousands of university guests in order to create an atmosphere of inclusivity and support}
+          {Led icebreakers and teambuilding activities for student orientation groups and university guests in order to create an atmosphere of inclusivity and support}
         \resumeItem{Teamwork}
-          {Worked efficiently alongside a team of 35 peers and graduate students to ensure all aspects of orientation ran smoothly}
+          {Worked efficiently alongside a team of 35 peers and graduate students to ensure logistical aspects of orientation ran smoothly}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -143,7 +153,7 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{ztaira14.github.io}
-      {A website built with React to provide convenient access to side projects}
+      {A website built with React to provide convenient access to personal projects}
     \resumeSubItem{bsmsViz}
       {A visualization of Northeastern's BS/MS program interdependencies using D3}
   \resumeSubHeadingListEnd
@@ -169,9 +179,9 @@
     %-----------RELEVANT COURSEWORK-----------------
     % \hspace*{0.5cm}
     \begin{tabu} { X[3, l] X[2, l] X[2, l] }
-      \hspace{16pt} Machine Learning and Pattern Recog. & Data Mining Techniques & Computer Vision \\
-      \hspace{16pt} Fund. of Computer Networks & Adv. in Deep Learning & Software Security \\
-      \hspace{16pt} Fund. of Engineering Algorithms & Probability and Statistics & Software Engineering \\
+      \hspace{16pt} Machine Learning/Pattern Recognition & Data Mining Techniques & Computer Vision \\
+      \hspace{16pt} Computer Networks & Adv. in Deep Learning & Software Security \\
+      \hspace{16pt} Engineering Algorithms & Probability and Statistics & Software Engineering \\
     \end{tabu}
 
 \resumeSubHeadingListEnd
@@ -182,7 +192,7 @@
     \resumeSubItem{Interpersonal}
       {Soccer, rock climbing, sailing, martial arts, cooking}
     \resumeSubItem{Solo}
-      {Reading, windsurfing}
+      {Reading, windsurfing, yoyoing}
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
