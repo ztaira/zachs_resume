@@ -10,12 +10,11 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage[empty]{fullpage}
+\usepackage[margin=3cm]{geometry}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
-\usepackage{tabu}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -71,7 +70,6 @@
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{ #4} \\
       \textit{#5} & \textit{ #6} \\
-      \textit{#7}
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -103,6 +101,17 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer: Systems Integration and Validation}{Boston, MA}
+      {Starry}{June 2019 - present}
+      \resumeItemListStart
+        \resumeItem{Python}
+          {Automated testing of Starry radio hardware and customer-premises equipment using Python}
+        \resumeItem{Ansible}
+          {Wrote Ansible modules and playbooks to facilitate management of SIV testing network and Starry manufacturing line}
+        \resumeItem{devops}
+          {Managed code deployments and hardware provisioning for 250+ hosts among dozens of testbeds}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer Co-op}{Boston, MA}
@@ -114,16 +123,6 @@
           {Storyboarded, wrote, and tested a prototype Chrome extension for highlighting Indicators of Compromise in IBM Resilient Incident Response Platform}
         \resumeItem{JS}
           {Migrated production front-end code from CoffeeScript to TypeScript while ensuring no regression bugs were introduced}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Sales Engineer Co-op}{Boston, MA}
-      {Resilient Systems}{Jan - July 2016}
-      \resumeItemListStart
-        \resumeItem{Presales}
-          {Ran technical presentations for numerous Fortune 500 and countless smaller companies in order to accelerate the B2B sales cycle}
-        \resumeItem{Python}
-          {Built custom scripts to demonstrate functionality of Resilient Systems Incident Response Platform for current and prospective customers}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -154,21 +153,21 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{zachsdjangoexperiments.com}
-      {A collection of experimental Django apps, hosted on Heroku}
-    \resumeSubItem{ztaira.github.io}
-      {A website built with React to provide convenient access to personal projects}
-    \resumeSubItem{bsmsViz}
-      {A visualization of Northeastern's BS/MS program interdependencies using D3}
+    \resumeSubItem{ztaira.com}
+      {A linux machine on DigitalOcean for hosting static sites and various services}
+    \resumeSubItem{jsonbin}
+      {A small project to bridge the gap between file logging and logging to a dedicated db}
+    \resumeSubItem{dotfiles}
+      {Various configuration files to enable easy workstation setup}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Software Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-      {Python, HTML/CSS/JS, MATLAB, Go, C++, bash, LaTeX}
+      {Python, Rust, bash, HTML/CSS/JS}
     \resumeSubItem{Technologies}
-      {Django, DRF, Jupyter, React, Vue}
+      {Ansible, make, poetry, tox, Linux, pipenv, virtualenv}
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
@@ -178,26 +177,17 @@
       {Northeastern University}{Boston, MA}
       {BS/MS in Electrical and Computer Engineering}{May 2019}
       {Honors: Eta Kappa Nu, Dean's List}{GPA: 3.689}
-      {Relevant Coursework:}
-
-    %-----------RELEVANT COURSEWORK-----------------
-    % \hspace*{0.5cm}
-    \begin{tabu} { X[3, l] X[2, l] X[2, l] }
-      \hspace{16pt} Machine Learning/Pattern Recognition & Data Mining Techniques & Computer Vision \\
-      \hspace{16pt} Computer Networks & Adv. in Deep Learning & Software Security \\
-      \hspace{16pt} Engineering Algorithms & Probability and Statistics & Software Engineering \\
-    \end{tabu}
 
 \resumeSubHeadingListEnd
 
 %--------RECREATIONAL ACTIVITIES------------
-\section{Recreational Activities}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Interpersonal}
-      {Soccer, rock climbing, sailing, martial arts, cooking}
-    \resumeSubItem{Solo}
-      {Reading, windsurfing, yoyoing}
-  \resumeSubHeadingListEnd
+%\section{Recreational Activities}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{Interpersonal}
+%      {Soccer, rock climbing, sailing, martial arts, cooking}
+%    \resumeSubItem{Solo}
+%      {Reading, guitar, windsurfing}
+%  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
