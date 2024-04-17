@@ -19,11 +19,8 @@ Hack-a-Week 8: My resume in LaTeX.
 ### Included Files:
 ```
 - README.md..................This readme file
-- ZacharyTairaResume.pdf.....A PDF of my resume, last updated on 10/19/2016
+- ZacharyTairaResume.pdf.....A PDF of my resume
 - ZacharyTairaResume.tex.....LaTeX file of my resume
 - diagrams/..................A directory containing relevant diagrams and images
 - LICENSE.txt................The MIT license
 ```
-
-### Example Output:
-![alt text](https://github.com/ztaira14/zachs_resume/blob/master/diagrams/gitclone.png "Git Clone")
